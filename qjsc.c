@@ -512,6 +512,7 @@ int main(int argc, char **argv)
     /* add system modules */
     namelist_add(&cmodule_list, "std", "std", 0);
     namelist_add(&cmodule_list, "os", "os", 0);
+    namelist_add(&cmodule_list, "webserver", "webserver", 0);
 
     for(;;) {
         c = getopt(argc, argv, "ho:cN:f:mxevM:p:S:D:");

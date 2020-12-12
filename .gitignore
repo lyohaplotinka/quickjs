@@ -1,0 +1,9 @@
+.obj/*.*
+.obj/examples/*
+.obj/tests/*
+
+examples/*
+!examples/*.c
+!examples/*.js
+
+!/**/.gitkeep

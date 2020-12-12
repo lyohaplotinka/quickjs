@@ -40,6 +40,7 @@
 
 #include "cutils.h"
 #include "quickjs-libc.h"
+#include "webserver.h"
 
 extern const uint8_t qjsc_repl[];
 extern const uint32_t qjsc_repl_size;
@@ -120,6 +121,7 @@ static JSContext *JS_NewCustomContext(JSRuntime *rt)
     /* system modules */
     js_init_module_std(ctx, "std");
     js_init_module_os(ctx, "os");
+    js_init_module_webserver(ctx, "webserver");
     return ctx;
 }
 
